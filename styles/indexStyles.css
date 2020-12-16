@@ -38,8 +38,8 @@ body {
     display: block;
 	font-size: 25px;
 }
-.dropdown-content a:hover {background-color: #9040A0;}
+.dropdown-content a:hover {background-color: #7D56AF;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #9040A0;}
+.dropdown:hover .dropbtn {background-color: #7D56AF;}
