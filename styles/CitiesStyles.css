@@ -1,0 +1,87 @@
+body {
+  background-image: url("images/CitiesBackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+div.background {
+  border: 2px solid black;
+}
+div.transbox {
+  margin: 0px;
+  padding: 10px;
+  background-color: #000000;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+div.bruh {
+	color: yellow;
+	font-weight: bold;
+}
+div.normal {
+	color: white;
+}
+.collapsible {
+  background: url(images/CitiesButton.png) no-repeat;
+  background-size: 100%;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background: url(images/CitiesButtonHighlight.png) no-repeat;
+  background-size: 100%;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+.dropbtn {
+    background-color: #671376;
+    color: white;
+    padding: 16px;
+	padding-top: -10px;
+	margin-left: 10px;
+	margin-top: 10px;
+    font-size: 20px;
+    border: 1;
+	border-color: black;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #671376;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	font-size: 20px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	font-size: 25px;
+}
+.dropdown-content a:hover {background-color: #9040A0;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #9040A0;}

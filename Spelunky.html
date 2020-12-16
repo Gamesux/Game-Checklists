@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="styles/SpelunkyStyles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="savescript.js"></script>
+
+</head>
+
+<body>
+<div class="dropdown">
+	<button class="dropbtn">Checklists</button>
+	<div class="dropdown-content">
+		<a href="index.html">Index</a>
+		<a href="Spelunky.html">Spelunky</a>
+		<a href="CitiesSkylines.html">Cities Skylines</a>
+	</div>
+</div>
+<br>
+<button type="button" class="collapsible">Characters</button>
+	<div class="content">
+		<div class="background">
+			<div class="transbox">
+				<input type="checkbox" id="box-1" class="box" /><div class='bruh'>Alto Singh</div> <div class='normal'>In a coffin after Quillback in 1-4.</div> <br>
+	
+				<input type="checkbox" id="box-2" class="box" /><div class='bruh'>Liz Mutton</div> <div class='normal'>In a coffin in 2-1 (Jungle).</div><br>
+	
+				<input type="checkbox" id="box-3" class="box" /><div class='bruh'>Nekka the Eagle</div> <div class='normal'>In a coffin in the Black Market.</div><br>
+	
+				<input type="checkbox" id="box-4" class="box" /><div class='bruh'>Lise Project</div> <div class='normal'>In a coffin in 2-1 (Volcana).</div><br>
+	
+				<input type="checkbox" id="box-5" class="box" /><div class='bruh'>Coco von Diamonds</div> <div class='normal'>In a coffin in Vlad's Castle.</div><br>
+	
+				<input type="checkbox" id="box-6" class="box" /><div class='bruh'>Manfred Tunnel</div> <div class='normal'>In a coffin in Ankh cave (Olmec's Lair).</div><br>
+	
+				<input type="checkbox" id="box-7" class="box" /><div class='bruh'>Little Jay</div> <div class='normal'>In a coffin in 4-4 (Tide Pool).</div><br>
+	
+				<input type="checkbox" id="box-8" class="box" /><div class='bruh'>Tina Flan</div> <div class='normal'>In a coffin in Abzu.</div><br>
+	
+				<input type="checkbox" id="box-9" class="box" /><div class='bruh'>Valerie Crump</div> <div class='normal'>In a coffin in 4-4 (Temple of Anubis).</div><br>
+	
+				<input type="checkbox" id="box-10" class="box" /><div class='bruh'>Au</div> <div class='normal'>In a coffin in the City of Gold.</div><br>
+	
+				<input type="checkbox" id="box-11" class="box" /><div class='bruh'>Demi von Diamonds</div> <div class='normal'>In a coffin in Yeti cave.</div><br>
+	
+				<input type="checkbox" id="box-12" class="box" /><div class='bruh'>Pilot</div> <div class='normal'>In a coffin in Mothership.</div><br>
+		
+				<input type="checkbox" id="box-13" class="box" /><div class='bruh'>Princess Airyn</div> <div class='normal'>In a coffin in Neo Babylon.</div><br>
+	
+				<input type="checkbox" id="box-14" class="box" /><div class='bruh'>Dirk Yamoaka</div> <div class='normal'>In a coffin in Goliath Frog's stomach (Sunken City).</div><br>
+	
+				<input type="checkbox" id="box-15" class="box" /><div class='bruh'>Guy Spelunky</div> <div class='normal'>Reach the game's normal ending.</div><br>
+	
+				<input type="checkbox" id="box-16" class="box" /><div class='bruh'>Classic Guy</div> <div class='normal'>Reach the game's ending through Sunken City.</div><br>
+			</div>	
+		</div>	
+	</div>
+	
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>

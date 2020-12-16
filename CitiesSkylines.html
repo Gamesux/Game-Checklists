@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="styles/CitiesStyles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="savescript.js"></script>
+
+</head>
+
+<body>
+<div class="dropdown">
+	<button class="dropbtn">Checklists</button>
+	<div class="dropdown-content">
+		<a href="index.html">Index</a>
+		<a href="Spelunky.html">Spelunky</a>
+		<a href="CitiesSkylines.html">Cities Skylines</a>
+	</div>
+</div>
+<br>
+<button type="button" class="collapsible">Eden Project</button>
+	<div class="content">
+		<div class="background">
+			<div class="transbox">
+				<input type="checkbox" id="box-17" class="box" /><div class='bruh'>Business Park</div> <div class='normal'>20,000 Squares of Commercial Zone built.</div> <br>
+				
+				<input type="checkbox" id="box-18" class="box" /><div class='bruh'>Official Park</div> <div class='normal'>10,000 Squares of Office Zone built.</div> <br>
+				
+				<input type="checkbox" id="box-19" class="box" /><div class='bruh'>Cathedral of Plentitude</div> <div class='normal'>Construct 30 different City service buildings.</div> <br>
+				
+				<input type="checkbox" id="box-20" class="box" /><div class='bruh'>Servicing Services Offices</div> <div class='normal'>Construct 300 City service buildings.</div> <br>
+				
+				<input type="checkbox" id="box-21" class="box" /><div class='bruh'>Friendly Neighbourhood Park</div> <div class='normal'>10,000 Squares of Residential Zone built.</div> <br>
+				
+				<input type="checkbox" id="box-22" class="box" /><div class='bruh'>Statue of Industry</div> <div class='normal'>10,000 Squares of Industrial Zone built.</div> <br>
+			</div>
+		</div>
+	</div>
+<br>
+<br>
+<br>
+<button type="button" class="collapsible">Hadron Collider</button>
+	<div class="content">
+		<div class="background">
+			<div class="transbox">
+				<input type="checkbox" id="box-23" class="box" /><div class='bruh'>Colossal Order Offices</div> <div class='normal'>Education at 20,000 money per week for 10 weeks.</div> <br>
+				
+				<input type="checkbox" id="box-24" class="box" /><div class='bruh'>Grand Library</div> <div class='normal'>7 Universities for 10 weeks.</div> <br>
+				
+				<input type="checkbox" id="box-25" class="box" /><div class='bruh'>Aquarium</div> <div class='normal'>5,000 Children in Elementary School.</div> <br>
+				
+				<input type="checkbox" id="box-26" class="box" /><div class='bruh'>Statue of Shopping</div> <div class='normal'>Have less than -1 money (idk how that works).</div> <br>
+				
+				<input type="checkbox" id="box-27" class="box" /><div class='bruh'>Posh Mall</div> <div class='normal'>All Tax rates at most 4%.</div> <br>
+				
+				<input type="checkbox" id="box-28" class="box" /><div class='bruh'>Theater Of Wonders</div> <div class='normal'>3 Universities.</div> <br>
+			</div>
+		</div>
+	</div>
+<br>
+<br>
+<br>
+<button type="button" class="collapsible">Fusion Power Plant</button>
+	<div class="content">
+		<div class="background">
+			<div class="transbox">
+				<input type="checkbox" id="box-29" class="box" /><div class='bruh'>Tax Office</div> <div class='normal'>Electricity production of 1,000MW.</div> <br>
+				
+				<input type="checkbox" id="box-30" class="box" /><div class='bruh'>Science Center</div> <div class='normal'>5,000 full lifespans lived in the City.</div> <br>
+				
+				<input type="checkbox" id="box-31" class="box" /><div class='bruh'>Observatory</div> <div class='normal'>1,000 abandoned buildings for 5 weeks.</div> <br>
+				
+				<input type="checkbox" id="box-32" class="box" /><div class='bruh'>MAM Modern Art Museum</div> <div class='normal'>50% of population highly educated.</div> <br>
+				
+				<input type="checkbox" id="box-33" class="box" /><div class='bruh'>Fountain of Life and Death</div> <div class='normal'>One full lifetime spent in the city.</div> <br>
+				
+				<input type="checkbox" id="box-34" class="box" /><div class='bruh'>Plaza of the Dead</div> <div class='normal'>3 full Cemeteries.</div> <br>
+			</div>
+		</div>
+	</div>
+<br>
+<br>
+<br>
+<button type="button" class="collapsible">Medical Center</button>
+	<div class="content">
+		<div class="background">
+			<div class="transbox">
+				<input type="checkbox" id="box-35" class="box" /><div class='bruh'>High Interest Tower</div> <div class='normal'>2,000 money in debt.</div> <br>
+				
+				<input type="checkbox" id="box-36" class="box" /><div class='bruh'>Oppression Office</div> <div class='normal'>unemployment over 50% for 5 weeks.</div> <br>
+				
+				<input type="checkbox" id="box-37" class="box" /><div class='bruh'>Court House</div> <div class='normal'>Crime rate over 50% for 5 weeks.</div> <br>
+				
+				<input type="checkbox" id="box-38" class="box" /><div class='bruh'>Mall of Moderation</div> <div class='normal'>Average garbage piling per building of at least 25.</div> <br>
+				
+				<input type="checkbox" id="box-39" class="box" /><div class='bruh'>Lazaret Plaza</div> <div class='normal'>3 Weeks of &lt;20% citizen health.</div> <br>
+				
+				<input type="checkbox" id="box-40" class="box" /><div class='bruh'>Sea-and-Sky Scraper</div> <div class='normal'>Cargo Harbor and Passenger Harbor.</div> <br>
+			</div>
+		</div>
+	</div>
+	
+	
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>	
+
+</body>
