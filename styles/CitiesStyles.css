@@ -47,7 +47,7 @@ div.normal {
   overflow: hidden;
 }
 .dropbtn {
-    background-color: #320667;
+    background-color: #4A5662;
     color: white;
     padding: 16px;
 	padding-top: -10px;
@@ -66,7 +66,7 @@ div.normal {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #320667;
+    background-color: #4A5662;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -80,8 +80,8 @@ div.normal {
     display: block;
 	font-size: 25px;
 }
-.dropdown-content a:hover {background-color: #250B88;}
+.dropdown-content a:hover {background-color: #438AB6;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #250B88;}
+.dropdown:hover .dropbtn {background-color: #438AB6;}
