@@ -16,6 +16,18 @@ body {
 	border-color: black;
 }
 
+.stuffbtn {
+    background-color: #6F46A2;
+    color: white;
+    padding: 16px;
+	padding-top: -10px;
+	margin-left: 30px;
+	margin-top: 10px;
+    font-size: 20px;
+    border: 1;
+	border-color: black;
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
